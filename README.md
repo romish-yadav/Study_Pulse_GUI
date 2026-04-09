@@ -8,5 +8,5 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone the Repo
 2.  ```bash
-3.  git clone https://github.com/romish-yadav/Study_Pulse_GUI.git
+    git clone https://github.com/romish-yadav/Study_Pulse_GUI.git
    
