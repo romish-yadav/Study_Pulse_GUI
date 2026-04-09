@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard • Study Pulse</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="index.html" class="logo" style="color:var(--primary); margin-bottom:50px;">
+                <span class="material-icons-round">school</span>
+                <h2>Study Pulse</h2>
+            </a>
+
+            <a href="dashboard.html" style="display:block; padding:16px 20px; border-radius:16px; background:var(--primary); color:white; margin:10px 0;">
+                <span class="material-icons-round" style="margin-right:12px;">dashboard</span> Dashboard
+            </a>
+            <a href="#" style="display:block; padding:16px 20px; border-radius:16px; margin:10px 0;">Library</a>
+            <a href="#" style="display:block; padding:16px 20px; border-radius:16px; margin:10px 0;">Analytics</a>
+            <a href="#" style="display:block; padding:16px 20px; border-radius:16px; margin:10px 0;">Revision Queue</a>
+
+            <div onclick="logout()" class="logout-btn" style="margin-top:80px;">
+                <span class="material-icons-round">logout</span>
+                <strong>Logout</strong>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:40px;">
+                <div>
+                    <h1>Welcome back, <span id="userName">Scholar</span>! 👋</h1>
+                    <p style="color:#555; font-size:1.1rem;">12-day streak • Keep going strong!</p>
+                </div>
+                <button onclick="logout()" style="background:none; border:none; color:#d32f2f; cursor:pointer; font-size:1.1rem;">
+                    Logout
+                </button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+                <div class="card">
+                    <h3>Units Completed</h3>
+                    <h2 style="font-size:3.2rem; color:var(--primary);">12</h2>
+                </div>
+                <div class="card">
+                    <h3>Hours Studied</h3>
+                    <h2 style="font-size:3.2rem; color:var(--primary);">48</h2>
+                </div>
+                <div class="card">
+                    <h3>Current Streak</h3>
+                    <h2 style="font-size:3.2rem; color:var(--primary);">12 🔥</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Progress Overview</h3>
+                <p><strong>DSA</strong> — 65% Mastery</p>
+                <p><strong>Web Development</strong> — 82% Mastery</p>
+                <p><strong>Java</strong> — 45% Mastery</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
