@@ -7,4 +7,6 @@ Study Pulse is a sleek, modern dashboard interface designed for students and edu
 To get a local copy up and running, follow these simple steps:
 
 1. Clone the Repo
-2. git clone https://github.com/romish-yadav/Study_Pulse_GUI.git
+2.  '''bash
+3.  git clone https://github.com/romish-yadav/Study_Pulse_GUI.git
+4.  bash'''
